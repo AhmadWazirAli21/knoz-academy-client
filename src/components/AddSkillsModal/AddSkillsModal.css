@@ -1,0 +1,49 @@
+.addSkills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+
+.add-siklls-modal{
+    width: 400px;
+    align-self: center;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #e0dddd;
+    border-radius: 4px;
+}
+.add-siklls-modal h1{
+    align-self: center;
+    margin: 10px 0px;
+    font-size: 20px;
+    color: rgb(47, 47, 113);
+}
+.add-siklls-modal input{
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid rgb(168, 168, 247);
+    border-radius: 4px;background: transparent ;
+    margin-bottom: 20px;
+    outline: none;
+}
+.add-siklls-modal button{
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;background: transparent ;
+    margin-bottom: 20px;
+    background: #2b447c;
+    color: #Fff;
+    cursor: pointer;
+    transition: .3s;
+}
+.add-siklls-modal button:hover{
+    transform: scale(1.02);
+    transition: .3s;
+}

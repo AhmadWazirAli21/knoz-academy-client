@@ -1,0 +1,190 @@
+*{
+    font-family: "Montserrat", sans-serif;
+}
+.profile-page-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px;
+    align-items: center;
+}
+.profile-page-container .profile-page-upper-side{
+    display: flex;
+    width: 70%;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+.profile-page-container .profile-page-upper-side .user-avatar{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.profile-page-container .profile-page-upper-side .user-info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.profile-page-container .profile-page-upper-side .user-info .user-name {
+    font-weight: 600;
+}
+.profile-page-container .profile-page-upper-side .user-info .student-info-email{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.profile-page-container .profile-page-upper-side .user-info .student-info-email .user-type{
+    background-color: #EBF2FF;
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #5F8DEF;
+}
+.profile-page-container .profile-page-upper-side .user-info .student-info-email .user-email{
+    font-size: 13px;
+}
+.profile-page-container .profile-page-bottom-side{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 70%;
+    padding: 20px;
+}
+.profile-page-container .profile-page-bottom-side .user-porfile-btn{
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+}
+.profile-page-container .profile-page-bottom-side .user-porfile-btn button {
+    display: flex;
+    position: relative;
+    gap: 5px;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px; 
+    background: #EBF2FF;
+    border-radius: 4px;
+    color: #5F8DEF;
+    outline: none;
+    transition: .3s;
+}
+.profile-page-bottom-side .about-me-section,
+.profile-page-bottom-side .enrolled-courses-section
+{
+    width: 100%;
+}
+.profile-page-bottom-side .about-me-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.profile-page-container .about-me-section .about-text-conatiner{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    background: #EBF2FF;
+    border-radius: 10px;
+}
+.profile-page-container .about-me-section .about-text-conatiner strong{
+    color: #5F8DEF;
+    background: transparent;
+}
+.profile-page-container .about-me-section .about-text-conatiner .about-text{
+    color: #2b447c;
+    font-size: 14px;
+    background: transparent;
+}
+.profile-page-container .about-me-section .skills-conatiner{
+    padding: 20px;
+    background: #EBF2FF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.profile-page-container .about-me-section .skills-conatiner strong{
+    color: #5F8DEF;
+    background: transparent;
+}
+.profile-page-container .about-me-section .skills-conatiner .skills{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: transparent;
+}
+.profile-page-container .about-me-section .skills-conatiner .skills .skill{
+    padding: 5px 8px;
+    border-radius: 20px;
+    background: #b3c3e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-page-container .about-me-section .skills-conatiner .skills .skill p{
+    font-size: 14px;
+    background: transparent;
+    color: #2b447c;
+}
+
+
+@media(max-width: 500px) {
+    .profile-page-container .about-me-section {
+        width: 100vw;
+        align-self: center;
+        padding: 20px;
+    }
+}
+
+
+.profile-page-container .logout {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.profile-page-container .logout:hover {
+    scale: 1.05;
+    transition: 0.3s;
+}
+
+.profile-page-container .about-me-section .skills-conatiner .skills .add-skill-container {
+    padding: 5px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #b3c3e6;
+     cursor: pointer;
+}
+.profile-page-container .about-me-section .skills-conatiner .skills .add-skill-container p {
+    background: transparent;
+    color: #2b447c;
+    font-size: 14px;    
+}
+.profile-page-container .about-me-section .skills-conatiner .skills .add-skill-container .add-skill{
+    background: transparent;
+    color: #fff;
+}
+
+.profile-page-container .about-me-section .card {
+    display: none;
+}
+
+
+/* .profile-page-container .enrolled-courses-section {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+} */

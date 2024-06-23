@@ -1,0 +1,72 @@
+.add-video-close-btn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 10px;
+    margin-right: 30px;
+    font-size: 1.3rem;
+}
+
+.add-course-video-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px;
+    box-shadow: 0px 0px 10px #a9a9a9;
+}
+
+@media(max-width: 768px) {
+    .add-course-video-container {
+        margin: 0;
+        margin-top: 50px;
+    }
+}
+
+.add-video-close-btn svg {
+    cursor: pointer;
+}
+
+.add-course-video-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-course-video-container form input {
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid blue;
+}
+
+.add-course-video-container form input::placeholder {
+    font-size: large;
+}
+
+.add-course-video-container form input:focus {
+    outline: none;
+}
+
+.add-course-video-container form #videos {
+    display: none;
+}
+
+.add-course-video-container form label,
+.add-course-video-container form button {
+    background-color: blue;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    width: 150px;
+    transition: .3s;
+}
+
+.add-course-video-container form label:hover,
+.add-course-video-container form button:hover {
+    opacity: 70%;
+    transition: .3s;
+}

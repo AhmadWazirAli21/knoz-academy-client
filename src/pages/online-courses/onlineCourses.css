@@ -1,0 +1,77 @@
+.OnlineCourses-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 120px ;
+    width: 100%;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
+
+@media(max-width: 768px) {
+    .OnlineCourses-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+.OnlineCourses-section .left-side {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.OnlineCourses-section .left-side h1 {
+    color: #0F2A65;
+}
+.OnlineCourses-section .left-side p{
+    font-size: 14px;
+    color: #3f6386;
+}
+.OnlineCourses-section .left-side .get-started-btn{
+    margin-top: 30px;
+    width: 120px;
+    height: 35px;
+    border: 1px solid #6b93e4;
+    border-radius: 3px ;
+    color: #39398e;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s;
+}
+.OnlineCourses-section .left-side .get-started-btn:hover{
+    border: 1px solid transparent;
+    background-color:#3f6386    ;
+    color: #ffffff;
+}
+.OnlineCourses-section .right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.OnlineCourses-section .right-side img{
+    width: 50%;
+    border-radius: 5px;
+}
+
+@media(max-width: 768px) {
+    .OnlineCourses-section  {
+        padding: 50px;
+    }
+    .OnlineCourses-section .left-side {
+        align-items: center;
+    }
+    .OnlineCourses-section .left-side h1 {
+        font-size: 24px;
+    }
+    .OnlineCourses-section .right-side {
+        justify-content: flex-start;
+    }
+    .OnlineCourses-section .right-side img {
+        width: 60%;
+        margin-left: 13%;
+    }
+}

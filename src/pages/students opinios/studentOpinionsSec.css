@@ -1,0 +1,31 @@
+.students-op {
+    margin-bottom: 200px;
+    padding: 20px;
+       font-family: "Montserrat", sans-serif;
+       /* margin-top: 100px; */
+}
+
+.students-op h2 {
+    text-align: center;
+    color: #011A73;
+    font-size: 28px;
+}
+
+.students-op .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+.students-op .section-header {
+    margin-bottom: 50px;
+}
+
+@media(max-width:768px) {
+    .students-op .card-container {
+        grid-template-columns: 1fr;
+    }
+    .students-op .section-header {
+        margin-top: 100px;
+    }
+}
+

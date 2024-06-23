@@ -1,0 +1,434 @@
+.intro-container{
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 50px;
+}
+.intro-container .header {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.intro-container .header .left-side{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+.intro-container .header .logo {
+    width: 40px;
+}
+.intro-container .header .left-side .links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.intro-container .header .left-side .links .link{
+    position: relative;
+}
+.intro-container .header .left-side .links .link::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: .3s;
+}
+.intro-container .header .left-side .links .link:hover::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #005DFF;
+    border-radius: 20px;
+    transition: .3s;
+}
+.intro-container .header .left-side .links .link a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: #556E9D;
+}
+.intro-container .header .login-btn{
+    width: 80px;
+    height: 30px;
+    border: none;
+    background: #005DFF;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s;
+}
+.intro-container .header .login-btn:hover{
+    transition: .3s;
+    transform: scale(1.01);
+}
+.intro-container section{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 50px);
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+.intro-container section .section-right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.section-left-side {
+    width: 50%;
+}
+.intro-container section .section-right-side img{
+    width:70%;
+    border-radius: 5px;
+    /* rotate: -5deg; */
+}
+.intro-container section .section-left-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.intro-container section .section-left-side h1{
+    color: #092167;
+    font-weight: 800;
+}
+
+.section-left-side .section-search-course {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}.section-left-side .section-search-course .search-course-input{
+    height: 35px;
+    width: 100%;
+    border: 1px solid #556E9D;
+    padding-left: 10px;
+    border-radius: 20px;
+    outline: none;
+}
+.section-left-side .section-search-course .search-course-btn{
+    height: 35px;
+    width: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background: #005DFF;
+    transition:  .3s;
+}
+.section-left-side .section-search-course .search-course-btn:hover{
+    transition: .3s;
+    transform: scale(1.03);
+}
+.section-left-side .section-search-course .search-course-btn .search-course-btn-icon{
+    background: transparent;
+}
+
+
+.intro-container section .section-left-side h2{
+    font-size: 20px;
+    color: #092167;
+}
+.intro-container section .section-left-side p{
+    font-size: 14px;
+    color: #4772a9;
+}
+@media screen and (max-width : 400px) {
+.intro-container{
+    width: 100%;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
+.mob-screen{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+}
+.open-menu {
+    background: transparent;
+    margin-right: 10px;
+    border: none;
+}
+.mob-screen .mob-screen-links {
+    width: 100%;
+    top:0;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    list-style: none;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid #88a1cf;
+    transition: .3s;
+} 
+.mob-screen .mob-screen-links .login-btn{
+    width: 80px;
+    height: 30px;
+    border: none;
+    background: #005DFF;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s;
+}   
+.mob-screen .mob-screen-links a{
+    text-decoration: none;
+    color: #4772a9;
+}
+.mob-screen .mob-screen-links .close-mob-menu{
+    position: absolute;
+    right: 0px;
+    border: none;
+    padding: 5px;
+    background-color: white;
+}
+.intro-container .mob-screen .logo {
+    width: 30px;
+    margin-left: 10px;
+}
+.intro-container section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 50px);
+    align-items: center;
+    padding: 20px;
+    padding: 30px;
+}
+
+.intro-container section .section-right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.intro-container section .section-left-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.intro-container section .section-left-side h2{
+    font-size: 12px;
+    color: #092167;
+    margin-bottom: 10px;
+}
+.intro-container section .section-right-side img{
+    width:100%;
+    border-radius: 5px;
+    margin-top: 20px;
+    rotate: 0deg;
+}
+}
+
+@media screen and (max-width : 360px) {
+.intro-container{
+    width: 100%;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
+.mob-screen{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+}
+.open-menu {
+    background: transparent;
+    margin-right: 10px;
+    border: none;
+}
+.mob-screen .mob-screen-links {
+    width: 100%;
+    top:0;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    list-style: none;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #88a1cf;
+    transition: .3s;
+}   
+.mob-screen .mob-screen-links .login-btn{
+    width: 80px;
+    height: 30px;
+    border: none;
+    background: #005DFF;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s;
+}    
+.mob-screen .mob-screen-links a{
+    text-decoration: none;
+    color: #4772a9;
+}
+.mob-screen .mob-screen-links .close-mob-menu{
+    position: absolute;
+    right: 0px;
+    border: none;
+    padding: 5px;
+}
+.intro-container .mob-screen .logo {
+    width: 30px;
+    margin-left: 10px;
+}
+.intro-container section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 50px);
+    align-items: center;
+    padding: 20px;
+    padding: 30px;
+}
+
+.intro-container section .section-right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.intro-container section .section-left-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.intro-container section .section-left-side h2{
+    color: #092167;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.intro-container section .section-right-side img{
+    width:100%;
+    border-radius: 5px;
+    margin-top: 20px;
+    rotate: 0deg;
+}
+}
+
+@media screen and (max-width : 550px) {
+.intro-container{
+    width: 100%;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
+.mob-screen{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+}
+.open-menu {
+    background: transparent;
+    margin-right: 10px;
+    border: none;
+}
+.mob-screen .mob-screen-links {
+    width: 100%;
+    top:0;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    list-style: none;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #88a1cf;
+    transition: .3s;
+}
+.mob-screen .mob-screen-links .login-btn{
+    width: 80px;
+    height: 30px;
+    border: none;
+    background: #005DFF;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s;
+}       
+.mob-screen .mob-screen-links a{
+    text-decoration: none;
+    color: #4772a9;
+}
+.mob-screen .mob-screen-links .close-mob-menu{
+    position: absolute;
+    right: 0px;
+    border: none;
+    padding: 5px;
+}
+.intro-container .mob-screen .logo {
+    width: 30px;
+    margin-left: 10px;
+}
+.intro-container section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 50px);
+    align-items: center;
+    padding: 20px;
+    padding: 30px;
+}
+
+.intro-container section .section-right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.intro-container section .section-left-side{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+}
+
+.intro-container section .section-left-side h1 {
+    font-size: 30px;
+}
+
+.intro-container section .section-left-side h2{
+    color: #092167;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.intro-container section .section-right-side img{
+    width:100%;
+    border-radius: 5px;
+    margin-top: 20px;
+    rotate: 0deg;
+}
+}
